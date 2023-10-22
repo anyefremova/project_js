@@ -7,7 +7,23 @@
 </head>
 
 <body>
-  <p>JS Webpck Template</p>
+  <div class="container">
+    <div class="block__image"></div>
+    <div class="block__form">
+      <div class="conatiner__form">
+        <h3>H2Oasis</h3>
+        <h1>Create your Free Account</h1>
+        <form name="registrationForm" class="registrationForm" novalidate>
+          <div class="form__section">
+            <label for="name" class="form__label">Имя:</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Введите имя" minlength="2"
+              maxlength="20" required />
+            <span class="error-message" id="name-error"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
