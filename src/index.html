@@ -15,11 +15,46 @@
         <h1>Create your Free Account</h1>
         <form name="registrationForm" class="registrationForm" novalidate>
           <div class="form__section">
-            <label for="name" class="form__label">Имя:</label>
-            <input type="text" id="name" name="name" class="form__input" placeholder="Введите имя" minlength="2"
-              maxlength="20" required />
+            <label for="name" class="form__label">Full Name</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Enter your full name here"
+              minlength="2" maxlength="20" required />
             <span class="error-message" id="name-error"></span>
-          </div>
+            <div class="form__section">
+              <label for="email" class="form__label">Email</label>
+              <input type="email" id="email" name="email" class="form__input" placeholder="Enter your Email here"
+                required />
+              <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form__section">
+              <label for="password" class="form__label">Password</label>
+              <input type="password" id="password" name="password" class="form__input"
+                placeholder="Enter your Password here" minlength="8" required
+                pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,20}$/">
+              <span class="error-message" id="password-error"></span>
+              <div class="checkbox-text">
+                <div class="checkbox-content">
+                  <input type="checkbox" id="createAccount">
+                  <label for="createAccount" class="text">Creating an account means you’re okay with our Terms of
+                    Service, Privacy Policy,
+                    and our default Notification Settings.</label>
+                </div>
+              </div>
+              <div class="input-field button">
+                <input type="button" value="Create Account">
+              </div>
+              <div class="block__login">
+                <div class="login-signup">
+                  <span class="text">Already have a account?
+                    <a href="#" class="text login-link">Login in</a>
+                  </span>
+                </div>
+                <span class="or">- OR -</span>
+                <div class="goggle__button">
+                  <img src="/src/static/icons/google.svg">
+                  <span class="google__text">Sing up with Google</span>
+                </div>
+              </div>
+            </div>
         </form>
       </div>
     </div>
